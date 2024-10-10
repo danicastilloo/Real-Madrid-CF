@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid CF</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #001489;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: 0px 4px 2px -2px gray;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            padding: 14px 20px;
+            text-decoration: none;
+            color: #001489;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #001489;
+            color: white;
+        }
+
+        .content {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .content img {
+            width: 200px;
+            height: auto;
+            animation: spin 4s infinite linear;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        footer {
+            background-color: #001489;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Real Madrid CF</h1>
+    </header>
+
+    <nav>
+        <a href="historia.html">Historia</a>
+        <a href="palmares.html">Palmarés</a>
+        <a href="jugadores.html">Jugadores Destacados</a>
+        <a href="tienda.html">Tienda</a>
+    </nav>
+
+    <div class="content">
+        <h2>Bienvenidos a la página oficial del Real Madrid CF</h2>
+        <p>Descubre la rica historia del club, los trofeos conquistados a lo largo de los años y a los jugadores que han hecho historia.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" alt="Real Madrid Logo">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Real Madrid CF - Página creada por [Tu Nombre]</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palmarés del Real Madrid CF</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #001489;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: 0px 4px 2px -2px gray;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            padding: 14px 20px;
+            text-decoration: none;
+            color: #001489;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #001489;
+            color: white;
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+            background-color: #ffffff;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 1200px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .content h2 {
+            color: #001489;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.1em;
+            color: #333;
+            line-height: 1.8em;
+            margin: 20px 0;
+            text-align: justify;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content .trophies {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .trophy {
+            width: 250px;
+            height: 350px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease;
+        }
+
+        .trophy img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .trophy:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .trophy:hover img {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #001489;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .content .intro {
+            margin-bottom: 40px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            color: #555;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .intro h3 {
+            font-size: 1.6em;
+            color: #001489;
+            margin-top: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Palmarés del Real Madrid CF</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="jugadores.html">Jugadores Destacados</a>
+    </nav>
+
+    <div class="content">
+        <div class="intro">
+            <h2>Un Legado de Triunfos</h2>
+            <p>El Real Madrid CF es el club con más títulos de la historia del fútbol. Con 14 Champions League, 35 títulos de La Liga, 19 Copas del Rey y numerosos trofeos internacionales, la historia del club está adornada con victorias que han marcado la diferencia en el deporte. En esta sección, celebramos sus conquistas más icónicas.</p>
+            <h3>Algunos de los trofeos más importantes en la historia del club:</h3>
+        </div>
+
+        <div class="trophies">
+            <!-- Champions League -->
+            <div class="trophy">
+                <img src="https://cdn2.mediotiempo.com/uploads/media/2021/03/06/real-madrid-presume-copas-europa.jpg" alt="14 Copas de Europa">
+                <p><strong>14 Copas de Europa</strong></p>
+                <p>Conquistadas en las ediciones más prestigiosas, la Liga de Campeones de la UEFA ha sido el escenario donde el Real Madrid ha brillado con más fuerza. El club ha ganado 14 veces el torneo, siendo el equipo con más títulos.</p>
+            </div>
+
+            <!-- La Liga -->
+            <div class="trophy">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhcY4dAa-mD_QFsKBc-Do2gkuZMua1ezvxwQ&s" alt="35 Títulos de Liga">
+                <p><strong>35 Títulos de La Liga</strong></p>
+                <p>Con una dominancia aplastante en el fútbol español, el Real Madrid ha logrado conquistar 35 títulos de La Liga, demostrando ser el equipo más exitoso en la competición nacional.</p>
+            </div>
+
+            <!-- Copa del Rey -->
+            <div class="trophy">
+                <img src="https://www.planetarealmadrid.com/uploads/s1/13/63/26/1/real-madrid-73.jpeg" alt="19 Copas del Rey">
+                <p><strong>19 Copas del Rey</strong></p>
+                <p>Uno de los trofeos más importantes en el fútbol español, la Copa del Rey ha sido ganada en 19 ocasiones por el Real Madrid, consolidando su dominio en el ámbito nacional.</p>
+            </div>
+        </div>
+
+        <div class="trophies">
+            <!-- Supercopa de España -->
+            <div class="trophy">
+                <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2024/01/14/17052183958224.jpg" alt="13 Supercopas de España">
+                <p><strong>13 Supercopas de España</strong></p>
+                <p>Este trofeo es símbolo del mejor equipo de España, y el Real Madrid ha demostrado ser el mejor en 13 ocasiones al ganar la Supercopa de España, enfrentando a los campeones de La Liga y la Copa del Rey.</p>
+            </div>
+
+            <!-- Mundial de Clubes -->
+            <div class="trophy">
+                <img src="https://img.asmedia.epimg.net/resizer/v2/OKGWKEXBEBHOPE2SU4RTFQMJYM.jpg?auth=b4e26c293908231ddd450da0de8e1bfe4da2515c9d274521ea55dd47380f6c96&width=1472&height=1104&focal=542%2C161" alt="5 Mundiales de Clubes">
+                <p><strong>5 Mundiales de Clubes</strong></p>
+                <p>El Real Madrid ha demostrado ser el mejor equipo de fútbol a nivel mundial, conquistando 5 veces el FIFA Club World Cup, el torneo que enfrenta a los campeones continentales.</p>
+            </div>
+
+            <!-- Copa Intercontinental -->
+            <div class="trophy">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_124xffwnKVUEpuZMOgM_mE3vhohM85nmYA&s" alt="3 Copas Intercontinentales">
+                <p><strong>3 Copas Intercontinentales</strong></p>
+                <p>En el ámbito internacional, el Real Madrid también ha logrado la victoria en 3 ocasiones en la Copa Intercontinental, enfrentando a los campeones de la Copa Libertadores de América.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Real Madrid CF - Página creada por [Tu Nombre]</p>
+    </footer>
+
+</body>
+</html>
